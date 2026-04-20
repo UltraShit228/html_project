@@ -220,6 +220,7 @@ footer {
     header nav a {
         display: grid;
         font-size: 0.8rem;
+        width: max-content;
     }
     
     main section section svg{
