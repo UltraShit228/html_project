@@ -218,9 +218,21 @@ footer {
 
 @media (max-width: 768px) {
     header nav a {
-        display: grid;
-        font-size: 0.8rem;
-        width: max-content;
+        font-size: 0.6rem;
+        padding: 0.25%;
+        margin: 0.4%;
+    }
+
+    header nav h2 {
+        font-size: 0.9rem;
+    }
+
+    .img_container .img_overlay {
+        bottom: -5.2%;
+    }
+
+    .img_container .img_overlay_2 {
+        bottom: 28.5%;
     }
     
     main section section svg{
