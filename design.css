@@ -216,7 +216,7 @@ footer {
 }
 
 
-@media (max-width: 1920px) {
+@media (max-width: 768px) {
   main section {
     display: grid;
     grid-template-columns: 1fr; 
