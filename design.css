@@ -218,7 +218,7 @@ footer {
 
 @media (max-width: 768px) {
     header nav a {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 0.3%;
         margin: 0.4%;
     }
