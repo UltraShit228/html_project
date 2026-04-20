@@ -1,5 +1,7 @@
 :root {
     --main_color: rgb(229, 255, 0);
+    --links_color: rgb(255, 221, 0);
+    --border_color: rgb(173, 160, 11);
 }
 
 body {
@@ -7,6 +9,7 @@ body {
     color: var(--main_color);
     margin: 0;
 }
+
 
 .img_container img {
     height: 100%;
@@ -36,6 +39,7 @@ body {
     background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
 }
 
+
 header {
     font-size: 1.3rem;
     font-weight: 800;
@@ -46,28 +50,24 @@ header {
     margin-top: -16.9%;
     position: sticky;
     top: 0;
+    padding: 1% 0;
 }
 
 header nav a {
-    color: var(--main_color);
+    color: var(--links_color);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 800;
     margin: 0 5.2%;
+    background-color: rgb(14, 14, 14);
+    border-radius: 30px;
+    padding: 0.4%;
+    margin: 0.8%;
 }
 
-header nav section {
-    display: flex;
-    align-items: center;
-}
-
-header nav section h2 {
+header nav h2 {
     font-size: 1.75rem;
-    margin-left: 45%;
-}
-header nav section a {
-    font-size: 1.5rem;
-    margin-left: 25%;
+    text-align: center;
 }
 
 main {
@@ -76,19 +76,86 @@ main {
 }
 
 main section {
-    border-radius: 10%;
+    border-radius: 30px;
     border-width: 0.5rem;
     border-style: solid;
-    border-color: var(--main_color);
+    border-color: var(--border_color);
     background-color: black;
     padding: 1% 1%;
-    margin: 3% 0;
+    margin: 5% 0;
 }
 
-main section h1{
+.header_decor {
+    border: 0;
+    display: flex;
+    padding: 0% 0%;
+    margin: 0 0%;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+main #end {
+    padding: 3% 1%;
+    margin: 5% 0;
+}
+
+main section h1 {
     text-align: center;
 }
 
+main section a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: var(--border_color);
+    background-color: black;
+    padding: 0.8% 0.8%;
+    font-size: 1.3rem;
+    color: var(--links_color);
+}
+
+main .special_section {
+    display: flex;
+    border: 0;
+    margin: 0 0;
+    padding: 1% 0;
+}
+
+main .special_section img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0.4rem;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+}
+
+form input {
+    padding: 3%;
+    margin: 3%;
+    width: 20rem;
+    margin-left: -3%;
+    border-radius: 10px;
+    color: var(--main_color);
+    background-color: rgb(16, 16, 16);
+    border-color: var(--border_color);
+}
+
+form button {
+    padding: 4%;
+    color: var(--main_color);
+    background-color: rgb(16, 16, 16);
+    border-color: var(--border_color);
+}
 
 
 footer {
