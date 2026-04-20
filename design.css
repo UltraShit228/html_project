@@ -216,10 +216,36 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-  main section {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 15px; 
-  }
+@media (max-width: 1920px) {
+    header nav a {
+        display: grid;
+        font-size: 1.2rem;
+        width: 18%;
+    }
+    
+    main section section svg{
+        display: none;
+    }
+
+    main section h1 {
+        font-size: 1.7rem;
+    }
+
+    main section p {
+        font-size: 0.9rem;
+    }
+
+    main section .special_section {
+        display: grid;
+        align-items: center;
+    }
+
+    main section .special_section img {
+        width: 300px;
+        height: 165px;
+    }
+
+    main section a {
+        font-size: 1.2rem;
+    }
 }
