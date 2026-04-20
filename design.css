@@ -235,6 +235,10 @@ footer {
         bottom: 28.5%;
     }
     
+    main {
+        margin-top: 60px;
+    }
+
     main section section svg{
         display: none;
     }
