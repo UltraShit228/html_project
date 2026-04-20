@@ -219,8 +219,7 @@ footer {
 @media (max-width: 768px) {
     header nav a {
         display: grid;
-        font-size: 1.2rem;
-        width: 18%;
+        font-size: 0.8rem;
     }
     
     main section section svg{
