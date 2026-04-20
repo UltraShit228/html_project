@@ -59,10 +59,19 @@ header nav a {
     font-size: 1.4rem;
     font-weight: 800;
     margin: 0 5.2%;
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(27, 27, 27);
     border-radius: 30px;
     padding: 0.4%;
     margin: 0.8%;
+    transition: 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: rgba(20, 20, 20);
+}
+
+header nav a:active {
+    background-color: rgba(32, 32, 32);
 }
 
 header nav h2 {
@@ -105,18 +114,38 @@ main section h1 {
     text-align: center;
 }
 
+main section h1:hover {
+    animation: bounce-up-down 0.7s ease-in-out;
+}
+
 main section a {
-    display: flex;
+    display: grid;
     text-align: center;
     justify-content: center;
+    margin: 1%;
     border-radius: 30px;
     border-width: 0.5rem;
     border-style: solid;
     border-color: var(--border_color);
     background-color: black;
     padding: 0.8% 0.8%;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: var(--links_color);
+    transition: 0.3s ease;
+}
+
+main section a:hover {
+    text-decoration: none;
+    background-color: rgb(12, 12, 12);
+}
+
+main section a:active {
+    text-decoration: none;
+    background-color: rgb(30, 30, 30);
+}
+
+main section a:visited {
+    color: rgb(255, 255, 0);
 }
 
 main .special_section {
@@ -153,8 +182,13 @@ form input {
 form button {
     padding: 4%;
     color: var(--main_color);
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(24, 24, 24);
     border-color: var(--border_color);
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(16, 16, 16);;
 }
 
 
@@ -163,4 +197,28 @@ footer {
     padding: 3%;
     text-align: center;
     background-color: black;
+}
+
+
+@keyframes bounce-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-5px);
+  }
+  66% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  main section {
+    display: grid;
+    gap: 20px;
+  }
 }
